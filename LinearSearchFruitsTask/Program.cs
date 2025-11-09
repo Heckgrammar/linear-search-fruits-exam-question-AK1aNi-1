@@ -13,6 +13,18 @@
             
             // You must write your own linear search routine and not use any built-in fuctions available in C#
             // You should use meaningful variable names
-        }
+            string[] words = { "intercontinental", "television", "bunker", "chicken", "grape", "pen" };
+    		Console.WriteLine("What word would you like to find: ");
+    		string user_word = Console.ReadLine();
+    		bool found = false;
+    		foreach(string word in words)
+    		{
+    			if(word==user_word)
+    			{
+    				found = true;
+    			}
+    		}
+    		Console.WriteLine(found);
+            }
     }
 }
